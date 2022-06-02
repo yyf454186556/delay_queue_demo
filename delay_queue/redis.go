@@ -6,6 +6,8 @@ import (
     "time"
 )
 
+// 原文链接：https://mp.weixin.qq.com/s/dCZm7e0aSEirhEqiCBvAyQ
+
 // 获取延时消息数 -- 即进入sorted set中的数量
 func zcard(rdb *redis.Client, key string) *redis.IntCmd {
     return rdb.ZCard(key)
